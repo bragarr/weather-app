@@ -5,17 +5,34 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./assets/style/style.css">
-        <title>Aplicativo - Previsão do Tempo</title>
+        <script src="./assets/script/weather.js" defer></script>
+        <title>App Consulta - Previsão do Tempo</title>
     </head>
     <body> 
         <header>
-            <h1 class="titulo__principal">App para Consulta de Previsão do Tempo</h1>            
+            <h1 class="titulo__principal">Consulta Previsão do Tempo</h1>            
         </header>
         <main>
-            <section class="area__principal--app">
-                <article class="campo__busca">
-                    <input type="text" id="campo__busca" class="input__busca"placeholder="Digite o nome da cidade">
-                    <button class="botao__busca">SUBMIT</button>
+            <form class="campo__busca">
+                <input type="text" id="campo__busca" class="input__busca"placeholder="Digite o nome da cidade">
+                <button class="botao__busca">SUBMIT</button>
+                <span class="mensagem__alerta"></span>
+            </form>
+            <section class="ajax__section">
+                <article class="container__dados--climaticos">
+                    <ul class="dados__climaticos--cidades">
+                        <li class="dados__cidade">
+                            <h2 class="nome__cidade" data-nane="...">
+                                <span>...</span>
+                                <sup>...</sup>
+                            </h2>
+                            <span class="temperatura__cidade">...<sup>°c</sup></span>
+                            <figure>
+                                <img src="#" Alt="#" class="icone__previsao--tempo">
+                                <figcaption></figcaption>
+                            </figure>
+                        </li>
+                    </ul>
                 </article>
             </section>
         </main>

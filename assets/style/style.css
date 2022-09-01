@@ -38,3 +38,28 @@
     font-weight: 700;
     cursor: pointer;
 }
+
+@media screen and (max-width: 780px) {
+    .campo__busca {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .titulo__principal {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .input__busca {
+        font-size: 25px;
+        width: 340px;
+    }
+    .botao__busca{
+        margin: 10px 0;
+        width: 340px;
+    }
+    
+}
