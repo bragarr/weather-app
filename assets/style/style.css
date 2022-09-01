@@ -39,6 +39,61 @@
     cursor: pointer;
 }
 
+.ajax__section {
+    display: inline-block;
+}
+
+.dados__climaticos--cidades {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dados__cidade {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+    border-radius: 10px;
+}
+
+.nome__cidade {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+    display: inline-block;
+}
+
+.cidade {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+    display: inline-block;
+}
+
+.abrev__pais {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+    display: inline-block;
+}
+
+.temperatura__cidade {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+}
+
+.celsius__simbolo {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+}
+
+.icone__previsao--tempo{
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+}
+
+.descricao_tempo {
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal); 
+}
+
+
 @media screen and (max-width: 780px) {
     .campo__busca {
         display: flex;
