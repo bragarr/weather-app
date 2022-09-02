@@ -14,6 +14,12 @@
     font-size: 50px;
 }
 
+.campo__busca {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
 .input__busca {
     color: var(--cor-fonte-principal);
     font-size: 30px;
@@ -21,8 +27,9 @@
     outline: 0;
     border: 0;
     border-bottom: 1px solid var(--cor-fonte-principal);
-
+    margin-right: 20px;
 }
+
 
 .input__busca::placeholder {
     color: var(--cor-fonte-principal);
@@ -39,26 +46,37 @@
     cursor: pointer;
 }
 
+.mensagem__alerta {
+    display: block;
+    font-size: 20px;
+    margin: 20px 0; 
+}
+
 .ajax__section {
-    display: inline-block;
+    background-color: var(--cor-fonte-principal);
 }
 
 .dados__climaticos--cidades {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
 }
 
 .dados__cidade {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
     border-radius: 10px;
+    margin: 0 20px 20px 0;
 }
 
 .nome__cidade {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
     display: inline-block;
+    display: block;
+    text-align: center;
 }
 
 .cidade {
@@ -68,14 +86,20 @@
 }
 
 .abrev__pais {
-    background-color: var(--cor-fonte-principal);
-    color: var(--cor-background-principal);
+    background-color: var(--cor-botao);
+    color: var(--cor-fonte-principal);
     display: inline-block;
+    padding: 5px 8px;
+    border-radius: 8px;
+    font-size: 10px;
 }
 
 .temperatura__cidade {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
+    font-size: 60px;
+    display: block;
+    text-align: center;
 }
 
 .celsius__simbolo {
@@ -83,16 +107,30 @@
     color: var(--cor-background-principal);
 }
 
+figure {
+    background-color: var(--cor-fonte-principal);
+    text-align: center;
+}
+
+.info__detail {
+    font-size: 10px;
+    background-color: var(--cor-fonte-principal);
+    color: var(--cor-background-principal);
+}
+
+
 .icone__previsao--tempo{
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
+    margin: 0;
+    padding: 0;
+    width: 160px;
 }
 
 .descricao_tempo {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal); 
 }
-
 
 @media screen and (max-width: 780px) {
     .campo__busca {
@@ -111,10 +149,22 @@
     .input__busca {
         font-size: 25px;
         width: 340px;
+        margin-right: 0;
     }
     .botao__busca{
         margin: 10px 0;
         width: 340px;
+    }
+
+    .dados__climaticos--cidades {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dados__cidade {
+        padding: 0 60px;
     }
     
 }
