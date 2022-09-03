@@ -17,7 +17,9 @@ formulario.addEventListener("submit", function(event) {
 
             const li = document.createElement("li");
             if(cidadePais.includes(`${name}${sys.country}`)) {
-                document.getElementById("mensagem").innerHTML = "você já inlcuiu esta 😉";
+                document.getElementById("mensagem").innerHTML = "Opa! Esta consulta já foi feita😉";
+                inputCidade.value = "";
+                inputCidade.focus();
             } else {
                 li.classList.add("dados__cidade");
             const containerDadosTempo = `
@@ -26,9 +28,9 @@ formulario.addEventListener("submit", function(event) {
                     <sup class="abrev__pais">${sys.country}</sup>
                 </h2>
                 <span class="temperatura__cidade">${Math.round(main.temp)}<sup class="celsius__simbolo">°c</sup>
-                <p class="info__detail">Máxima do dia: ${Math.round(main.temp_max)}°c</p>
-                <p class="info__detail">Miníma do dia: ${Math.round(main.temp_min)}°c</p>
-                <p class="info__detail">Taxa humidade: ${Math.round(main.humidity)}%</p>
+                <p class="info__detail">Máxima: ${Math.round(main.temp_max)}°c</p>
+                <p class="info__detail">Miníma: ${Math.round(main.temp_min)}°c</p>
+                <p class="info__detail">Umidade: ${Math.round(main.humidity)}%</p>
                 </span>
                 <figure>
                     <img src=${icon} Alt=${weather[0]["main"]} class="icone__previsao--tempo">
@@ -38,10 +40,14 @@ formulario.addEventListener("submit", function(event) {
             li.innerHTML = containerDadosTempo;
             list.appendChild(li);
             cidadePais.push(`${name}${sys.country}`);
+            inputCidade.value = "";
+            inputCidade.focus();
             console.log(data);
             }
         }) 
         .catch(() => {
-            document.getElementById("mensagem").innerHTML = "Poxa! Digite um nome válido para cidade 😩";
+            document.getElementById("mensagem").innerHTML = "Opa! Digite um nome válido para cidade😩";
+            inputCidade.value = "";
+            inputCidade.focus();
         })
 })

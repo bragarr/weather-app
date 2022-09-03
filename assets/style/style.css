@@ -1,33 +1,58 @@
 :root {
     --cor-fonte-principal: #FFFFFF;
-    --cor-background-principal: #091731;
-    --cor-botao: #b80303;
+    --cor-background-principal: #445c5c;
+    --cor-botao: #6703b8;
 }
 
 *{
-    background-color: var(--cor-background-principal);
     color: var(--cor-fonte-principal);
     font-family: 'arial', sans-serif;
 }
 
+body {
+    margin:0;
+    background-color: var(--cor-background-principal);
+}
+
+.cabecalho__principal {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-botao);
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.imagem__cabecalho {
+    width: 140px;
+}
+
 .titulo__principal {
+    background-color: var(--cor-botao);
     font-size: 50px;
+    margin: 0;
+}
+
+.apresentacao__projeto {
+    margin: 20px 20px;
 }
 
 .campo__busca {
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    margin: 20px 20px;
+    text-align: center;
 }
 
 .input__busca {
-    color: var(--cor-fonte-principal);
+    color: var(--cor-botao);
     font-size: 30px;
     box-shadow: none;
     outline: 0;
     border: 0;
     border-bottom: 1px solid var(--cor-fonte-principal);
-    margin-right: 20px;
+    border-radius: 10px;
+    width: 600px;
 }
 
 
@@ -44,16 +69,20 @@
     border-radius: 5px;
     font-weight: 700;
     cursor: pointer;
+    margin: 10px 0;
+    border-radius: 10px;
+    
 }
 
 .mensagem__alerta {
     display: block;
     font-size: 20px;
     margin: 20px 0; 
+    text-align: center;
 }
 
 .ajax__section {
-    background-color: var(--cor-fonte-principal);
+    background-color: var(--cor-background-principal);
 }
 
 .dados__climaticos--cidades {
@@ -61,22 +90,26 @@
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .dados__cidade {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
     border-radius: 10px;
-    margin: 0 20px 20px 0;
+    margin: 20px 20px 20px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
 }
 
 .nome__cidade {
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
-    display: inline-block;
     display: block;
     text-align: center;
+    grid-column: span 2;
+
 }
 
 .cidade {
@@ -100,6 +133,7 @@
     font-size: 60px;
     display: block;
     text-align: center;
+    margin: 5px 10px;
 }
 
 .celsius__simbolo {
@@ -110,12 +144,14 @@
 figure {
     background-color: var(--cor-fonte-principal);
     text-align: center;
+    margin: 5px 10px;
 }
 
 .info__detail {
     font-size: 10px;
     background-color: var(--cor-fonte-principal);
     color: var(--cor-background-principal);
+    margin: 4px 0;
 }
 
 
@@ -124,7 +160,7 @@ figure {
     color: var(--cor-background-principal);
     margin: 0;
     padding: 0;
-    width: 160px;
+    width: 130px;
 }
 
 .descricao_tempo {
@@ -139,10 +175,11 @@ figure {
         align-items: center;
         flex-direction: column;
         margin: 20px 0;
+        padding: 0;
     }
 
     .titulo__principal {
-        font-size: 30px;
+        font-size: 20px;
         text-align: center;
     }
 
@@ -165,6 +202,9 @@ figure {
 
     .dados__cidade {
         padding: 0 60px;
+    }
+    .imagem__cabecalho {
+        width: 60px;
     }
     
 }
