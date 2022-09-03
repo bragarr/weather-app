@@ -14,15 +14,21 @@ Este projeto é uma aplicação web com a finalinalidade de realizar consultas d
 
 #Objetivo#
 
-O principal objetivo deste projeto era utilizar uma API para coleta dos dados que seriam consultados pelo usuário. Neste projeto em específico foi utilizada a API
+O principal objetivo deste projeto era utilizar uma API para coleta dos dados que seriam consultados pelo usuário. Neste projeto em específico foi utilizada a APICancel changes
 do Open Weather Map (https://openweathermap.org/). É uma organização que se define como um time de experts em ciência de dados e TI com profunda pesquisa em dados climáticos.
 Além da própria manipulação da API, outros pontos abordados para aprimoramento neste projeto:
 
+
 *Aprendizado de novos métodos em DOM*
+
 *Realizando AJAX request*
+
 *Melhoramento de Semâtica HTML*
+
 *Aplicação de mais mecânicas CSS*
+
 *Aprimoramento do uso de Display: Grid*
+
 
 ![image](https://user-images.githubusercontent.com/108424896/188252941-f289e83d-5576-4815-b16e-d757707ce423.png)
 
