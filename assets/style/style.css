@@ -208,3 +208,107 @@ figure {
     }
     
 }
+
+@media screen and (max-width:1250px) {
+
+    .imagem__cabecalho {
+        width: 100px;
+    }
+    
+    .titulo__principal {
+        font-size: 40px;
+    }
+
+    .apresentacao__projeto {
+        font-size: 16px;
+    }
+    
+    .input__busca {
+        width: 350px;
+    }
+
+    .botao__busca{
+        width: 180px;
+    }
+
+    .ajax__section {
+        margin: 0 120px;
+    }
+
+    .dados__climaticos--cidades {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .titulo__principal {
+        font-size: 30px;
+    }
+
+    .apresentacao__projeto {
+        font-size: 14px;
+    }
+
+    .ajax__section {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .imagem__cabecalho {
+        width: 80px;
+    }
+    
+    .titulo__principal {
+        font-size: 25px;
+    }
+
+    .apresentacao__projeto {
+        font-size: 12px;
+    }
+
+    .input__busca {
+        width: 300px;
+    }
+
+    .botao__busca{
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .ajax__section {
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .imagem__cabecalho {
+        width: 60px;
+    }
+    
+    .titulo__principal {
+        font-size: 20px;
+    }
+
+    .apresentacao__projeto {
+        font-size: 10px;
+    }
+
+    .input__busca {
+        width: 250px;
+    }
+
+    .botao__busca{
+        width: 120px;
+        font-size: 10px;
+    }
+
+    .ajax__section {
+        margin: 0 100px;
+    }
+
+    .dados__cidade {
+        display: flex;
+        flex-direction: column;
+    }
+}
